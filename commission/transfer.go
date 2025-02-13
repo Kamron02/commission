@@ -7,5 +7,6 @@ func main() {
 	fmt.Print("Введите сумму перевода: ")
 	fmt.Scan(&amount)
 
-	fmt.Printf("Вы ввели: %.2f сум\n", amount)
+	commission := amount * 0.0029 // 0.29% комиссия
+	fmt.Printf("Комиссия: %.2f сум\n", commission)
 }
